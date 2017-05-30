@@ -1,1 +1,100 @@
-/*font-family: 'Merriweather', serif;*/
+
+/* BASE ELEMENTS */
+
+body,
+input::placeholder {
+font-family: 'Merriweather', serif;
+color: #2d3945;
+font-weight: 300;
+}
+
+header {
+  background: #2d3945;
+  text-align: center;
+  padding: 15px 0;
+}
+
+header h1 {
+  color: #fff;
+}
+
+h1,
+legend {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  border-top: solid 3px #2d3945;
+  margin-top: 4px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding-top: 25px;
+}
+
+p,
+label {
+  font-size: 1.25em;
+}
+
+/* CLASS ELEMENTS */
+
+.width {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.signup-div {
+  border-bottom: solid 6px #2d3945;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.set-1 {
+  padding-bottom: 15px;
+  border-bottom: solid 3px #2d3945;
+}
+
+/* SUBSTRING SELECTORS & PSUEDO-CLASSES */
+
+select,
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  background-color: #eff0f1;
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 1.125em;
+  text-indent: 25px;
+}
+
+input[name*="zip_code"] {
+  width: 50%;
+  margin-right: 50%;
+}
+
+input::placeholder {
+  text-align: left;
+  font-style: italic;
+  color: #C3C7CA;
+}
+
+input[required]::placeholder {
+  text-align: right;
+  padding-right: 25px;
+}
