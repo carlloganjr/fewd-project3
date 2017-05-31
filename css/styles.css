@@ -1,7 +1,7 @@
 
 body,
 textarea,
-input[type="submit"],
+button,
 input::placeholder {
 font-family: 'Merriweather', serif;
 color: #2d3945;
@@ -135,7 +135,7 @@ input[type*="radio"] {
   margin: 10px 0 10px 10px;
 }
 
-input[type="submit"] {
+button {
   background-color: #4EBBB5;
   width: 95%;
   margin-left: 2.5%;
@@ -146,6 +146,10 @@ input[type="submit"] {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 1.25em;
+}
+
+button:hover {
+  opacity: .8;
 }
 
 input:focus,
@@ -163,11 +167,31 @@ input[name*="full_name"]:focus:required:invalid
   font-size: .75em;
   font-style: italic;
   color: red;
-  margin: -20px 0 15px 2.5%;
+  margin: -20px 0 9px 2.5%;
 }
 
-input[name*="full_name"]:focus:required:valid {
-  background-image: url();
+input[name*="full_name"]:required:valid {
+  background: url(../images/valid-checkmark.png) no-repeat 95% center;
+  background-size: 18px;
+  background-color: #eff0f1;
+  transition: 0s;
+}
+
+input[name*="email_address"]:focus:required:invalid
++ .email-addr {
+  display: block;
+  text-align: left;
+  font-size: .75em;
+  font-style: italic;
+  color: red;
+  margin: -20px 0 9px 2.5%;
+}
+
+input[name*="email_address"]:required:valid {
+  background: url(../images/valid-checkmark.png) no-repeat 95% center;
+  background-size: 18px;
+  background-color: #eff0f1;
+  transition: 0s;
 }
 
 /* OVERRIDE FOR TEXTAREA - HEIGHT & INDENT */
@@ -177,3 +201,12 @@ textarea {
   text-indent: 10px;
 }
 /**************************************************/
+
+
+/************************************************
+              768px MEDIA QUERY
+*************************************************/
+
+@media (min-width: 768px) {
+  
+}
