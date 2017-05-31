@@ -86,8 +86,7 @@ label {
 }
 
 #copyright {
-  width: 60%;
-  margin: 0 20%;
+  margin: 0 calc((100% - 162px) / 2);
 }
 
 /* SUBSTRING SELECTORS & PSUEDO-CLASSES */
@@ -208,5 +207,84 @@ textarea {
 *************************************************/
 
 @media (min-width: 768px) {
-  
+
+  .width {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  header {
+    padding: 5px 0;
+    margin-bottom: 30px;
+  }
+
+  .signup-div h1 {
+    font-size: 1.625em;
+  }
+
+  form {
+    padding-top: 20px;
+    margin-bottom: 300px;
+  }
+
+  fieldset:not(.set-1) {
+    margin-top: 20px;
+  }
+
+  legend {
+    font-size: 1.25em;
+  }
+
+  .set-1 label {
+    float: left;
+    clear: both;
+    font-size: 1em;
+    margin-top: calc((50px - 16px) / 2);
+  }
+
+  .set-1 {
+    padding-bottom: 25px;
+  }
+
+  select,
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    float: right;
+    width: 70%;
+    margin: 0 2.5% 20px 0;
+    height: 50px;
+  }
+
+  input[name="zip_code"]{
+    width: 25%;
+    margin-right: 47.5%;
+  }
+
+  textarea {
+    width: 95%;
+    margin-bottom: 25px;
+  }
+
+  button {
+    margin-bottom: 35px;
+  }
+
+  input[name*="full_name"]:focus:required:invalid
+  + .fullname {
+    float: left;
+    padding-top: 2px;
+    padding-bottom: 0;
+    margin-left: 27.5%;
+  }
+
+  input[name*="email_address"]:focus:required:invalid
+  + .email-addr {
+    float: left;
+    padding-top: 2px;
+    padding-bottom: 0;
+    margin-left: 27.5%;
+  }
+
 }
