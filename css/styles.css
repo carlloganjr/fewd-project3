@@ -155,7 +155,7 @@ input:focus,
 select:focus,
 textarea:focus {
   transition: .5s;
-  background-color: rgba(63, 127, 191, .2);
+  background-color: rgba(63, 127, 191, .15);
 }
 
 input[name*="full_name"]:focus:required:invalid
@@ -244,9 +244,9 @@ textarea {
 @media (min-width: 768px) {
 
   .width {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   header {
