@@ -1,5 +1,6 @@
 
 body,
+h3,
 textarea,
 button,
 input::placeholder {
@@ -17,6 +18,7 @@ body {
 body,
 input::placeholder,
 p,
+h3,
 label {
   font-size: .9em;
 }
@@ -58,6 +60,11 @@ legend {
 
 label {
   margin-left: 2.5%;
+}
+
+h3 {
+  margin-left: 2.5%;
+  margin-bottom: 0;
 }
 
 /* CLASS & ID SELECTORS */
